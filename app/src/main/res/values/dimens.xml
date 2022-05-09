@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="padding_splash">2dp</dimen>
+    <dimen name="border_radius_splash">40dp</dimen>
+
+</resources>
