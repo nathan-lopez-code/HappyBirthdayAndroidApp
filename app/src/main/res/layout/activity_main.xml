@@ -4,4 +4,81 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    tools:context=".MainActivity"
+    android:background="?attr/colorOnPrimary"
+    android:padding="@dimen/padding_splash">
+
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/minheight"
+        android:background="@drawable/wave"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/first_img"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/img8"
+        app:layout_constraintTop_toBottomOf="@id/top_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+         />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/second_img"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/img8"
+        app:layout_constraintTop_toBottomOf="@id/first_img"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/treeth_img"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/img8"
+        app:layout_constraintTop_toBottomOf="@id/first_img"
+        app:layout_constraintStart_toEndOf="@id/second_img"
+        />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottom_layout"
+        app:layout_constraintTop_toBottomOf="@id/treeth_img"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/my_wich"
+            android:textAlignment="center"
+            style="@style/TextBirth"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/minheight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/wave__2_"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

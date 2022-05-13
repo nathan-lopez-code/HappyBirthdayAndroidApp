@@ -3,5 +3,8 @@
 
     <dimen name="padding_splash">2dp</dimen>
     <dimen name="border_radius_splash">40dp</dimen>
+    <dimen name="smallText">16sp</dimen>
+    <dimen name="mediumText">42sp</dimen>
+    <dimen name="minheight">50dp</dimen>
 
 </resources>

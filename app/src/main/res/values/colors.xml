@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="blue_alpha2">#A2D9FF</color>
+    <color name="colorPrimaryVariant">#A2D9FF</color>
     <color name="blue_alpha3">#6675B1</color>
     <color name="black_alpha2">#33000000</color>
-    <color name="blue_sky">#40A7ED</color>
+    <color name="colorPrimary">#40A7ED</color>
     <color name="rose_love_top">#E1BED8</color>
     <color name="rose_love_bottom">#EDD6E6</color>
 
